@@ -140,7 +140,11 @@ qemu-img convert -f vmdk <image-name>.vmdk -O qcow2 <image-name>.qcow2
 qemu-img info <image-name>.qcow2
 file <image-name>.qcow2
 
-export PYTHONWARNINGS="ignore::DeprecationWarning"
+alias upgrade='sudo apt update && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y'
+alias tryhackme='sudo openvpn ~/Documents/TryHackMe/NullByteM.ovpn'
+alias connect-vpn='sudo openvpn --config ~/Documents/vpnbook-de20-tcp443.ovpn --auth-user-pass ~/Documents/user-pass.txt'
+
+export PYTHONWARNINGS='ignore::DeprecationWarning'
 
 #########################
 # Virtualbox Mount File #
